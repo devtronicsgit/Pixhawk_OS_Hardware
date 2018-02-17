@@ -1,0 +1,215 @@
+*************************************************************
+FileName = PCA_0011_Mini Breakout_REV_B.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : PCA_0011_Mini Breakout_REV_B.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : PCA_0011_Mini Breakout_REV_B.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : PCA_0011_Mini Breakout_REV_B.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : PCA_0011_Mini Breakout_REV_B.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : PCA_0011_Mini Breakout_REV_B.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : PCA_0011_Mini Breakout_REV_B.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : PCA_0011_Mini Breakout_REV_B.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : PCA_0011_Mini Breakout_REV_B.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : PCA_0011_Mini Breakout_REV_B.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : PCA_0011_Mini Breakout_REV_B.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D17
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : PCA_0011_Mini Breakout_REV_B.Outline
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 16
+      File : PCA_0011_Mini Breakout_REV_B.Courtyard Bottom
+
+    Adding Layer      : Mechanical 16
+
+
+Used DCodes :
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 30
+      File : PCA_0011_Mini Breakout_REV_B.GM30
+
+    Adding Layer      : Mechanical 30
+
+
+Used DCodes :
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : PCA_0011_Mini Breakout_REV_B.GD1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D12
+    D26
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : PCA_0011_Mini Breakout_REV_B.GG1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D12
+*************************************************************
+

@@ -1,0 +1,16 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 12:38:47 PM On 17/02/2018
+
+Output: NC Drill
+Type  : NC Drill
+From  : PCB Document [PCA_0011_Mini Breakout_REV_B.CMPcbDoc]
+   Generated File[PCA_0011_Mini Breakout_REV_B.TXT]
+   Generated File[PCA_0011_Mini Breakout_REV_B.LDP]
+   Generated File[PCA_0011_Mini Breakout_REV_B.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:38:47 PM On 17/02/2018
