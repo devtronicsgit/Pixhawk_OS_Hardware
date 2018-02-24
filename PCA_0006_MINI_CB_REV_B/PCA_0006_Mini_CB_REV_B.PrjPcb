@@ -1,11 +1,11 @@
-[Design]
+﻿[Design]
 Version=1.0
 HierarchyMode=0
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ReleaseVaultGUID=
 ReleaseVaultName=
-ChannelDesignatorFormatString=$Component_$RoomName
+ChannelDesignatorFormatString=$Component_$ChannelName
 ChannelRoomLevelSeperator=_
 OpenOutputs=1
 ArchiveProject=0
@@ -28,11 +28,12 @@ PowerPortNamesTakePriority=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
-FSMCodingStyle=eFMSDropDownList_OneProcess
-FSMEncodingStyle=eFMSDropDownList_OneHot
+ForceUpdateCount=0
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
+LinkedManagedProjectGUID=
+StorageID=
 
 [Preferences]
 PrefsVaultGUID=
@@ -208,7 +209,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document11]
+DocumentPath=PCA_0006_Mini_CB_REV_B.CSPcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [ProjectVariant1]
+UniqueID=60EF10CD-1844-46B6-8544-00BDE02D48CA
 Description=PCA_0006_Mini_CB
 AllowFabrication=1
 ParameterCount=0
@@ -223,7 +242,7 @@ Variation7=Designator=JP2|UniqueId=\SSVSEHTE|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=.\BOM\Bill of Materials-PCA_0006_Mini_CB_REV_B(PCA_0006_Mini_CB).xls
+DocumentPath=BOM\Bill of Materials-PCA_0006_Mini_CB_REV_B(PCA_0006_Mini_CB).xls
 DItemRevisionGUID=
 
 [GeneratedDocument2]
@@ -474,274 +493,101 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=Brother MFC-J6510DW Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=CadnetixNetlist
-OutputName1=Cadnetix Netlist
+TargetPrinter=Brother HL-1210W series Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+OutputType1=EDIF
+OutputName1=EDIF for PCB
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-OutputType2=CalayNetlist
-OutputName2=Calay Netlist
+OutputType2=XSpiceNetlist
+OutputName2=XSpice Netlist
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
-OutputType3=EDIF
-OutputName3=EDIF for PCB
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
-OutputType4=EESofNetlist
-OutputName4=EESof Netlist
-OutputDocumentPath4=
-OutputVariantName4=
-OutputDefault4=0
-OutputType5=IntergraphNetlist
-OutputName5=Intergraph Netlist
-OutputDocumentPath5=
-OutputVariantName5=
-OutputDefault5=0
-OutputType6=MentorBoardStationNetlist
-OutputName6=Mentor BoardStation Netlist
-OutputDocumentPath6=
-OutputVariantName6=
-OutputDefault6=0
-OutputType7=MultiWire
-OutputName7=MultiWire
-OutputDocumentPath7=
-OutputVariantName7=
-OutputDefault7=0
-OutputType8=OrCadPCB2Netlist
-OutputName8=Orcad/PCB2 Netlist
-OutputDocumentPath8=
-OutputVariantName8=
-OutputDefault8=0
-OutputType9=PADSNetlist
-OutputName9=PADS ASCII Netlist
-OutputDocumentPath9=
-OutputVariantName9=
-OutputDefault9=0
-OutputType10=Pcad
-OutputName10=Pcad for PCB
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=PCADNetlist
-OutputName11=PCAD Netlist
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
-OutputType12=PCADnltNetlist
-OutputName12=PCADnlt Netlist
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=Protel2Netlist
-OutputName13=Protel2 Netlist
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=ProtelNetlist
-OutputName14=Protel
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=RacalNetlist
-OutputName15=Racal Netlist
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=RINFNetlist
-OutputName16=RINF Netlist
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SciCardsNetlist
-OutputName17=SciCards Netlist
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
-OutputType18=SIMetrixNetlist
-OutputName18=SIMetrix
-OutputDocumentPath18=
-OutputVariantName18=
-OutputDefault18=0
-OutputType19=SIMPLISNetlist
-OutputName19=SIMPLIS
-OutputDocumentPath19=
-OutputVariantName19=
-OutputDefault19=0
-OutputType20=TangoNetlist
-OutputName20=Tango Netlist
-OutputDocumentPath20=
-OutputVariantName20=
-OutputDefault20=0
-OutputType21=TelesisNetlist
-OutputName21=Telesis Netlist
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
-OutputType22=Verilog
-OutputName22=Verilog File
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
-OutputType23=VHDL
-OutputName23=VHDL File
-OutputDocumentPath23=
-OutputVariantName23=
-OutputDefault23=0
-OutputType24=WireListNetlist
-OutputName24=WireList Netlist
-OutputDocumentPath24=
-OutputVariantName24=
-OutputDefault24=0
-OutputType25=XSpiceNetlist
-OutputName25=XSpice Netlist
-OutputDocumentPath25=
-OutputVariantName25=
-OutputDefault25=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Brother MFC-J6510DW Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+TargetPrinter=Brother HL-1210W series Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-OutputType2=SIMetrixSimulation
-OutputName2=SIMetrix
-OutputDocumentPath2=
-OutputVariantName2=
-OutputDefault2=0
-OutputType3=SIMPLISSimulation
-OutputName3=SIMPLIS
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
 Description=
 TargetPrinter=Virtual Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=Assembler Source Print
-OutputName1=Assembler Source Prints
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+OutputType1=Composite
+OutputName1=Composite Drawing
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType2=C Source Print
-OutputName2=C Source Prints
+OutputType2=PCB 3D Print
+OutputName2=PCB 3D Print
 OutputDocumentPath2=
-OutputVariantName2=
+OutputVariantName2=[No Variations]
 OutputDefault2=0
 PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType3=C/C++ Header Print
-OutputName3=C/C++ Header Prints
+OutputType3=PCB 3D Video
+OutputName3=PCB 3D Video
 OutputDocumentPath3=
-OutputVariantName3=
+OutputVariantName3=[No Variations]
 OutputDefault3=0
 PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType4=C++ Source Print
-OutputName4=C++ Source Prints
+OutputType4=PCB Print
+OutputName4=PCB Prints
 OutputDocumentPath4=
 OutputVariantName4=
 OutputDefault4=0
 PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType5=Composite
-OutputName5=Composite Drawing
+OutputType5=PCBLIB Print
+OutputName5=PCBLIB Prints
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
 PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType6=Logic Analyser Print
-OutputName6=Logic Analyser Prints
+OutputType6=Report Print
+OutputName6=Report Prints
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
 PageOptions6=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType7=OpenBus Print
-OutputName7=OpenBus Prints
+OutputType7=Schematic Print
+OutputName7=Schematic Prints
 OutputDocumentPath7=
 OutputVariantName7=
 OutputDefault7=0
 PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType8=PCB 3D Print
-OutputName8=PCB 3D Print
+OutputType8=SimView Print
+OutputName8=SimView Prints
 OutputDocumentPath8=
-OutputVariantName8=[No Variations]
+OutputVariantName8=
 OutputDefault8=0
 PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType9=PCB 3D Video
-OutputName9=PCB 3D Video
+OutputType9=Wave Print
+OutputName9=Wave Prints
 OutputDocumentPath9=
-OutputVariantName9=[No Variations]
+OutputVariantName9=
 OutputDefault9=0
 PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType10=PCB Print
-OutputName10=PCB Prints
+OutputType10=WaveSim Print
+OutputName10=WaveSim Prints
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
 PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType11=PCBLIB Print
-OutputName11=PCBLIB Prints
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
-PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType12=Report Print
-OutputName12=Report Prints
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType13=Schematic Print
-OutputName13=Schematic Prints
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType14=SimView Print
-OutputName14=SimView Prints
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-PageOptions14=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType15=VHDL Print
-OutputName15=VHDL Prints
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-PageOptions15=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType16=Wave Print
-OutputName16=Wave Prints
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-PageOptions16=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType17=WaveSim Print
-OutputName17=WaveSim Prints
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
-PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType18=FSM Print
-OutputName18=FSM Prints
-OutputDocumentPath18=
-OutputVariantName18=
-OutputDefault18=0
-PageOptions18=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=Brother MFC-J6510DW Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+TargetPrinter=Brother HL-1210W series Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
 OutputDocumentPath1=
@@ -755,17 +601,12 @@ OutputVariantName2=[No Variations]
 OutputDefault2=0
 Configuration2_Name1=OutputConfigurationParameter1
 Configuration2_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=False|GenerateTextFormat=True
-OutputType3=Test Points For Assembly
-OutputName3=Test Point Report
-OutputDocumentPath3=
-OutputVariantName3=[No Variations]
-OutputDefault3=0
 
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Brother MFC-J6510DW Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+TargetPrinter=Brother HL-1210W series Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Final
 OutputName1=Final Artwork Prints
 OutputDocumentPath1=
@@ -1191,122 +1032,101 @@ OutputName2=Report Board Stack
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
-PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 OutputType3=Drill
 OutputName3=Drill Drawing/Guides
 OutputDocumentPath3=
 OutputVariantName3=
 OutputDefault3=0
 PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType4=IPC2581
-OutputName4=IPC-2581 Files
+OutputType4=CompositeDrill
+OutputName4=Composite Drill Drawing
 OutputDocumentPath4=
 OutputVariantName4=
 OutputDefault4=0
-OutputType5=Gerber X2
-OutputName5=Gerber X2 Files
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType5=Mask
+OutputName5=Solder/Paste Mask Prints
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
-OutputType6=CompositeDrill
-OutputName6=Composite Drill Drawing
+PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType6=NC Drill
+OutputName6=NC Drill Files
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
-PageOptions6=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType7=Mask
-OutputName7=Solder/Paste Mask Prints
+Configuration6_Name1=OutputConfigurationParameter1
+Configuration6_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=2|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Absolute|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes
+OutputType7=Plane
+OutputName7=Power-Plane Prints
 OutputDocumentPath7=
 OutputVariantName7=
 OutputDefault7=0
 PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType8=NC Drill
-OutputName8=NC Drill Files
+OutputType8=ODB
+OutputName8=ODB++ Files
 OutputDocumentPath8=
-OutputVariantName8=
+OutputVariantName8=[No Variations]
 OutputDefault8=0
 Configuration8_Name1=OutputConfigurationParameter1
-Configuration8_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=2|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Absolute|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes
-OutputType9=Plane
-OutputName9=Power-Plane Prints
+Configuration8_Item1=AddToAllLayerClasses.Set= |AddToAllPlots_bGlue=False|AddToAllPlots_bNames=False|AddToAllPlots_bRestrict=False|AddToAllPlots_bValues=False|AddToAllPlots_Dimension=False|AddToAllPlots_Document=False|AddToAllPlots_dxf=False|AddToAllPlots_Measures=False|AddToAllPlots_Milling=False|AddToAllPlots_Reference=False|AddToAllPlots_tDocu=False|AddToAllPlots_tGlue=False|AddToAllPlots_tNames=False|AddToAllPlots_tRestrict=False|AddToAllPlots_tValues=False|AddToAllPlots_vRestrict=False|ExportPositivePlaneLayers=False|GenerateDRCRulesFile=False|IncludeUnconnectedMidLayerPads=False|LayerClassesPlot.Set= |ObjsInsideBoardOutlineOnly=False|ODBProfileLayer=-1000|Plot_V7_1=True|Plot_V7_1_name=Mechanical Layer 27|Plot_V7_2=True|Plot_V7_2_name=Mechanical Layer 30|Plot_V7_3=True|Plot_V7_3_name=Mechanical Layer 34|PlotBottomLayerPlot=True|PlotBottomOverlayPlot=True|PlotBottomPastePlot=True|PlotBottomSolderPlot=True|PlotInternalPlane10Plot=False|PlotInternalPlane11Plot=False|PlotInternalPlane12Plot=False|PlotInternalPlane13Plot=False|PlotInternalPlane14Plot=False|PlotInternalPlane15Plot=False|PlotInternalPlane16Plot=False|PlotInternalPlane1Plot=False|PlotInternalPlane2Plot=False|PlotInternalPlane3Plot=False|PlotInternalPlane4Plot=False|PlotInternalPlane5Plot=False|PlotInternalPlane6Plot=False|PlotInternalPlane7Plot=False|PlotInternalPlane8Plot=False|PlotInternalPlane9Plot=False|PlotKeepOutLayerPlot=True|PlotMechanical10Plot=False|PlotMechanical11Plot=False|PlotMechanical12Plot=False|PlotMechanical13Plot=True|PlotMechanical14Plot=False|PlotMechanical15Plot=False|PlotMechanical16Plot=True|PlotMechanical1Plot=True|PlotMechanical2Plot=True|PlotMechanical3Plot=True|PlotMechanical4Plot=True|PlotMechanical5Plot=True|PlotMechanical6Plot=False|PlotMechanical7Plot=False|PlotMechanical8Plot=False|PlotMechanical9Plot=False|PlotMidLayer10Plot=False|PlotMidLayer11Plot=False|PlotMidLayer12Plot=False|PlotMidLayer13Plot=False|PlotMidLayer14Plot=False|PlotMidLayer15Plot=False|PlotMidLayer16Plot=False|PlotMidLayer17Plot=False|PlotMidLayer18Plot=False|PlotMidLayer19Plot=False|PlotMidLayer1Plot=False|PlotMidLayer20Plot=False|PlotMidLayer21Plot=False|PlotMidLayer22Plot=False|PlotMidLayer23Plot=False|PlotMidLayer24Plot=False|PlotMidLayer25Plot=False|PlotMidLayer26Plot=False|PlotMidLayer27Plot=False|PlotMidLayer28Plot=False|PlotMidLayer29Plot=False|PlotMidLayer2Plot=False|PlotMidLayer30Plot=False|PlotMidLayer3Plot=False|PlotMidLayer4Plot=False|PlotMidLayer5Plot=False|PlotMidLayer6Plot=False|PlotMidLayer7Plot=False|PlotMidLayer8Plot=False|PlotMidLayer9Plot=False|PlotTopLayerPlot=True|PlotTopOverlayPlot=True|PlotTopPastePlot=True|PlotTopSolderPlot=True|Record=ODBView
+OutputType9=Gerber
+OutputName9=Gerber Files
 OutputDocumentPath9=
-OutputVariantName9=
+OutputVariantName9=[No Variations]
 OutputDefault9=0
-PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType10=Test Points
-OutputName10=Test Point Report
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=ODB
-OutputName11=ODB++ Files
-OutputDocumentPath11=
-OutputVariantName11=[No Variations]
-OutputDefault11=0
-Configuration11_Name1=OutputConfigurationParameter1
-Configuration11_Item1=AddToAllLayerClasses.Set= |AddToAllPlots_bGlue=False|AddToAllPlots_bNames=False|AddToAllPlots_bRestrict=False|AddToAllPlots_bValues=False|AddToAllPlots_Dimension=False|AddToAllPlots_Document=False|AddToAllPlots_dxf=False|AddToAllPlots_Measures=False|AddToAllPlots_Milling=False|AddToAllPlots_Reference=False|AddToAllPlots_tDocu=False|AddToAllPlots_tGlue=False|AddToAllPlots_tNames=False|AddToAllPlots_tRestrict=False|AddToAllPlots_tValues=False|AddToAllPlots_vRestrict=False|ExportPositivePlaneLayers=False|GenerateDRCRulesFile=False|IncludeUnconnectedMidLayerPads=False|LayerClassesPlot.Set= |ObjsInsideBoardOutlineOnly=False|ODBProfileLayer=-1000|Plot_V7_1=True|Plot_V7_1_name=Mechanical Layer 27|Plot_V7_2=True|Plot_V7_2_name=Mechanical Layer 30|Plot_V7_3=True|Plot_V7_3_name=Mechanical Layer 34|PlotBottomLayerPlot=True|PlotBottomOverlayPlot=True|PlotBottomPastePlot=True|PlotBottomSolderPlot=True|PlotInternalPlane10Plot=False|PlotInternalPlane11Plot=False|PlotInternalPlane12Plot=False|PlotInternalPlane13Plot=False|PlotInternalPlane14Plot=False|PlotInternalPlane15Plot=False|PlotInternalPlane16Plot=False|PlotInternalPlane1Plot=False|PlotInternalPlane2Plot=False|PlotInternalPlane3Plot=False|PlotInternalPlane4Plot=False|PlotInternalPlane5Plot=False|PlotInternalPlane6Plot=False|PlotInternalPlane7Plot=False|PlotInternalPlane8Plot=False|PlotInternalPlane9Plot=False|PlotKeepOutLayerPlot=True|PlotMechanical10Plot=False|PlotMechanical11Plot=False|PlotMechanical12Plot=False|PlotMechanical13Plot=True|PlotMechanical14Plot=False|PlotMechanical15Plot=False|PlotMechanical16Plot=True|PlotMechanical1Plot=True|PlotMechanical2Plot=True|PlotMechanical3Plot=True|PlotMechanical4Plot=True|PlotMechanical5Plot=True|PlotMechanical6Plot=False|PlotMechanical7Plot=False|PlotMechanical8Plot=False|PlotMechanical9Plot=False|PlotMidLayer10Plot=False|PlotMidLayer11Plot=False|PlotMidLayer12Plot=False|PlotMidLayer13Plot=False|PlotMidLayer14Plot=False|PlotMidLayer15Plot=False|PlotMidLayer16Plot=False|PlotMidLayer17Plot=False|PlotMidLayer18Plot=False|PlotMidLayer19Plot=False|PlotMidLayer1Plot=False|PlotMidLayer20Plot=False|PlotMidLayer21Plot=False|PlotMidLayer22Plot=False|PlotMidLayer23Plot=False|PlotMidLayer24Plot=False|PlotMidLayer25Plot=False|PlotMidLayer26Plot=False|PlotMidLayer27Plot=False|PlotMidLayer28Plot=False|PlotMidLayer29Plot=False|PlotMidLayer2Plot=False|PlotMidLayer30Plot=False|PlotMidLayer3Plot=False|PlotMidLayer4Plot=False|PlotMidLayer5Plot=False|PlotMidLayer6Plot=False|PlotMidLayer7Plot=False|PlotMidLayer8Plot=False|PlotMidLayer9Plot=False|PlotTopLayerPlot=True|PlotTopOverlayPlot=True|PlotTopPastePlot=True|PlotTopSolderPlot=True|Record=ODBView
-OutputType12=Gerber
-OutputName12=Gerber Files
-OutputDocumentPath12=
-OutputVariantName12=[No Variations]
-OutputDefault12=0
-Configuration12_Name1=OutputConfigurationParameter1
-Configuration12_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=True|NumberOfDecimals=2|NumberOfDecimals=2|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16908304~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False
+Configuration9_Name1=OutputConfigurationParameter1
+Configuration9_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=True|NumberOfDecimals=2|NumberOfDecimals=2|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16908304~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False
 
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Brother MFC-J6510DW Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=Script
-OutputName1=Script Output
+TargetPrinter=Brother HL-1210W series Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+OutputType1=SimpleBOM
+OutputName1=Simple BOM
 OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
-OutputType2=SimpleBOM
-OutputName2=Simple BOM
+OutputType2=SinglePinNetReporter
+OutputName2=Report Single Pin Nets
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
-OutputType3=SinglePinNetReporter
-OutputName3=Report Single Pin Nets
+OutputType3=BOM_PartType
+OutputName3=Bill of Materials
 OutputDocumentPath3=
 OutputVariantName3=[No Variations]
 OutputDefault3=0
-OutputType4=BOM_PartType
-OutputName4=Bill of Materials
+PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration3_Name1=Filter
+Configuration3_Item1=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration3_Name2=General
+Configuration3_Item2=OpenExported=True|AddToProject=True|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|ShowExportOptions=True|TemplateFilename=BOM_SCH_3DR.xlt|BatchMode=5|FormWidth=1171|FormHeight=652|SupplierProdQty=10000|SupplierAutoQty=True|SupplierUseCachedPricing=False|SupplierCurrency=USD
+Configuration3_Name3=GroupOrder
+Configuration3_Item3=Comment=True|Footprint=True
+Configuration3_Name4=PCBDocument
+Configuration3_Item4=
+Configuration3_Name5=SortOrder
+Configuration3_Item5=Designator=Up|Comment=Up|Footprint=Up
+Configuration3_Name6=VisibleOrder
+Configuration3_Item6=Comment=132|Designator=112|Quantity=42|Manufacturer 1=42|Manufacturer Part Number 1=42|Supplier 1=42|Supplier Currency 1=42|Supplier Order Qty 1=42|Supplier Part Number 1=42|Supplier Stock 1=42|Supplier Subtotal 1=42|Supplier Unit Price 1=31|3DR_PARTNO=112|Description=109|Value=100
+OutputType4=ComponentCrossReference
+OutputName4=Component Cross Reference Report
 OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
-PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-Configuration4_Name1=Filter
-Configuration4_Item1=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
-Configuration4_Name2=General
-Configuration4_Item2=OpenExported=True|AddToProject=True|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|ShowExportOptions=True|TemplateFilename=BOM_SCH_3DR.xlt|BatchMode=5|FormWidth=1171|FormHeight=652|SupplierProdQty=10000|SupplierAutoQty=True|SupplierUseCachedPricing=False|SupplierCurrency=USD
-Configuration4_Name3=GroupOrder
-Configuration4_Item3=Comment=True|Footprint=True
-Configuration4_Name4=PCBDocument
-Configuration4_Item4=
-Configuration4_Name5=SortOrder
-Configuration4_Item5=Designator=Up|Comment=Up|Footprint=Up
-Configuration4_Name6=VisibleOrder
-Configuration4_Item6=Comment=132|Designator=112|Quantity=42|Manufacturer 1=42|Manufacturer Part Number 1=42|Supplier 1=42|Supplier Currency 1=42|Supplier Order Qty 1=42|Supplier Part Number 1=42|Supplier Stock 1=42|Supplier Subtotal 1=42|Supplier Unit Price 1=31|3DR_PARTNO=112|Description=109|Value=100
-OutputType5=ComponentCrossReference
-OutputName5=Component Cross Reference Report
+OutputType5=ReportHierarchy
+OutputName5=Report Project Hierarchy
 OutputDocumentPath5=
 OutputVariantName5=[No Variations]
 OutputDefault5=0
-OutputType6=ReportHierarchy
-OutputName6=Report Project Hierarchy
-OutputDocumentPath6=
-OutputVariantName6=[No Variations]
-OutputDefault6=0
 
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=Brother MFC-J6510DW Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+TargetPrinter=Brother HL-1210W series Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
 OutputDocumentPath1=
@@ -1485,8 +1305,8 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=Brother MFC-J6510DW Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+TargetPrinter=Brother HL-1210W series Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Configuration compliance
 OutputName1=Environment configuration compliance check
 OutputDocumentPath1=
@@ -1515,47 +1335,17 @@ OutputName5=Footprint Comparison Report
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
-OutputType6=Component states check
-OutputName6=Vault's components states check
-OutputDocumentPath6=
-OutputVariantName6=
-OutputDefault6=0
 
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=Brother MFC-J6510DW Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=AutoCAD dwg/dxf PCB
-OutputName1=AutoCAD dwg/dxf File PCB
+TargetPrinter=Brother HL-1210W series Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+OutputType1=ExportSTEP
+OutputName1=Export STEP
 OutputDocumentPath1=
-OutputVariantName1=
+OutputVariantName1=[No Variations]
 OutputDefault1=0
-OutputType2=AutoCAD dwg/dxf Schematic
-OutputName2=AutoCAD dwg/dxf File Schematic
-OutputDocumentPath2=
-OutputVariantName2=
-OutputDefault2=0
-OutputType3=ExportIDF
-OutputName3=Export IDF
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
-OutputType4=ExportSTEP
-OutputName4=Export STEP
-OutputDocumentPath4=
-OutputVariantName4=[No Variations]
-OutputDefault4=0
-OutputType5=NetList Sch
-OutputName5=NetList Sch
-OutputDocumentPath5=
-OutputVariantName5=
-OutputDefault5=0
-OutputType6=PDF3D
-OutputName6=Export PDF3D
-OutputDocumentPath6=
-OutputVariantName6=
-OutputDefault6=0
 
 [Modification Levels]
 Type1=1
@@ -1794,6 +1584,12 @@ Type108=2
 Type109=1
 Type110=1
 Type111=1
+Type112=3
+Type113=3
+Type114=3
+Type115=1
+Type116=1
+Type117=2
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
@@ -1832,7 +1628,6 @@ NetClassAutoBusEnabled=1
 NetClassAutoCompEnabled=0
 NetClassAutoNamedHarnessEnabled=0
 NetClassManualEnabled=1
-NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
 SelectedOnly=0
